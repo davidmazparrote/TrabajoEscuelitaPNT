@@ -12,7 +12,7 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		ArrayList<Producto> productos = chargeListProduct();
+		ArrayList<Producto> productos = cargarListaProductos();
 		Producto productoCaro = productos.get(0);
 		Producto productoBarato = productos.get(0);
 
@@ -35,12 +35,12 @@ public class Program {
 			mensaje += p.toString() + "\n";
 		}
 		mensaje += "=============================\n";
-		mensaje += "Producto m·s caro: " + productoCaro.getName() + "\n";
-		mensaje += "Producto m·s barato: " + productoBarato.getName();
+		mensaje += "Producto m√°s caro: " + productoCaro.getName() + "\n";
+		mensaje += "Producto m√°s barato: " + productoBarato.getName();
 		System.out.println(mensaje);
 	}
 
-	public static ArrayList<Producto> chargeListProduct() {
+	public static ArrayList<Producto> cargarListaProductos() {
 
 		ArrayList<Producto> productos = new ArrayList<Producto>();
 
